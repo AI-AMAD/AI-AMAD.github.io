@@ -1,11 +1,11 @@
 ---
 layout: home
-title: TIL
-permalink: /category/TIL/
+title: Til
+permalink: /category/til/
 ---
 {% include header.html %}
 <div class="c-posts o-opacity">
-  {% for post in site.categories['TIL'] %}
+  {% for post in site.categories['til'] %}
   <article class="c-post">
     {% if post.image %}
     <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
