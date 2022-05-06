@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Breakfast
-permalink: /category/breakfast/
+title: Python
+permalink: /category/python/
 ---
 {% include header.html %}
 <div class="c-posts o-opacity">
-  {% for post in site.categories['breakfast'] %}
+  {% for post in site.categories['python'] %}
   <article class="c-post">
     {% if post.image %}
     <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
