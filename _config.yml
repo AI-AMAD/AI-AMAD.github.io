@@ -1,74 +1,180 @@
-# Site Info
-title: '초보몽키의 개발공부로그'
-tagline: '초보몽키의 개발공부로그'
-description: '프로그래밍을 공부하며 배운점 느낀점을 기록하는 곳입니다.'
-baseurl: ""
-url: https://AI-AMAD.github.io
-logo: '/public/logo.png'
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the
+# server process.
 
-# Site configurations
-gems:
-  - jekyll-paginate
+# theme settings
+theme: "lone-wolf-theme"
+remote_theme: # "manid2/lone-wolf-theme"
+bootswatch_theme: "united" # cerulean, spacelab, united
+
+# site settings, follows the order used in jekyll-seo-tag plugin
+lang: "en_US"
+title: "Lone Wolf Theme"
+description: "A simple bootstrap based jekyll theme."
+url: "https://AI-AMAD.github.io"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+author: mani_d2
+twitter:
+  username: mani_d2 # should be site's username
+  card: summary
+logo: assets/images/lwt-logo-wolf-v2.png # PNG is SEO friendly
+# use below when there are social links for site
+#social:
+#  name: Mani Kumar
+#  links:
+#    - https://twitter.com/mani_d2
+#    - https://www.linkedin.com/in/manid2/
+#    - https://github.com/manid2
+# site verifications,
+webmaster_verifications:
+  google: # 1234
+  bing: # 1234
+  alexa: # 1234
+  yandex: # 1234
+  baidu: # 1234
+
+# comments settings
+comments:
+  provider: false # false (default), "disqus", "discourse"
+  disqus:
+    # refer what is disqus shortname article online
+    shortname:
+
+# feed
+atom_feed:
+  path: # blank (default) uses feed.xml
+
+# site search settings
+search: # true, false (default)
+search_full_content: # true, false (default)
+search_provider: # google
+
+google:
+  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  instant_search: # false (default), true
+
+# Analytics
+analytics:
+  provider: false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id:
+    anonymize_ip: # true, false (default)
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore /docs in theme
+  - /test # ignore /test in theme
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
 kramdown:
   input: GFM
-excerpt_separator: "<!-- more -->"
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
 sass:
+  sass_dir: _sass
+  # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   style: compressed
-  sass_dir: _scss
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
 
-version: 1.0.0
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# About/contact
-author:
-  name: LEE HYUNJOO
-  description: 초보몽키(LEE HYUNJOO)
-  contact:
-    # linkedin:  https://www.linkedin.com/in/lizhihao
-    github:    https://github.com/wayhome25
-    facebook:  https://www.facebook.com/wayhome25
-    # twitter:   https://twitter.com/Li_Zhihao
-    # weibo:     http://weibo.com/41173780
-    email:    mailto:siwabada@gmail.com
-
-# Navigation (2nd level links supported)
-nav:
-  Home:
-    - '/blog/'
-  Categories:
-    - '/'
-    # - { Categories All: '/blog/categories/' }
-    - { TIL (Today I Learned): '/blog/categories/#til' }
-    - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
-    - { Django: '/blog/categories/#django' }
-    - { python: '/blog/categories/#python' }
-    - { javascript: '/blog/categories/#javascript' }
-    - { nodejs: '/blog/categories/#nodejs' }
-    - { MySQL: '/blog/categories/#MySQL' }
-    - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
-    - { git: '/blog/categories/#git' }
-    - { firebase: '/blog/categories/#firebase' }
-    - { etc: '/blog/categories/#etc' }
-    # - { Tags: '/blog/tags/' }
-  About:
-    - '/about/'
-  Search:
-    - '/search/'
-
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
-
-
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
-disqus_short_name: 'wayhome25-github-io' # leave blank if you don't want disqus
-
-
-# Use the following plug-ins
-gems:
+# Plugins (previously gems:)
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-include-cache
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# site defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      show_hero: true
+      show_author: true
+      show_toc: true
+      share: true
+      show_comments: false
+      show_ads: false
+  # any page
+  - scope:
+      path: ""
+    values:
+      # for SEO and social sharing
+      image: assets/images/lwt-logo-wolf-v2.png
+      image_alt: Lone Wolf Theme logo version 2
