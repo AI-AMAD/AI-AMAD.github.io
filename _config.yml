@@ -1,12 +1,12 @@
-title: JainRecipes
-description: Compilation of family recipes
+title: AMAD's tech-blog
+description: 성장 하는 개발자 임정찬 입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://AI-AMAD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
 author-name:    JungChan Lim
-author-image:   1.jpg
-author-job:
+author-image:   이력서용 사진.jpeg
+author-job:     Deeplearning engineer
 author-email:   lkdfj2212@gmail.com # Add your email for contant form.
 author-twitter: # Add your twitter account
 about-author:
