@@ -1,53 +1,74 @@
-title: Welcome to Flexton
-description: Flexton is a responsive and ultra-minimal theme for Jekyll.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://AI-AMAD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# Site Info
+title: '초보몽키의 개발공부로그'
+tagline: '초보몽키의 개발공부로그'
+description: '프로그래밍을 공부하며 배운점 느낀점을 기록하는 곳입니다.'
+baseurl: ""
+url: https://AI-AMAD.github.io
+logo: '/public/logo.png'
 
-# Author
-author-name:    Clayton Hanson
-author-image:   1.jpg
-author-job:     Web Developer
-author-email:   your-email@domain.com # Add your email for contant form.
-author-twitter: artemsheludko_ # Add your twitter account
-about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
-
-# Social settings
-social-twitter:   artemsheludko_
-social-facebook:
-social-github:    artemsheludko
-social-pinterest: artemsheludko
-social-instagram: artemsheludko_
-social-youtube:
-social-vk:   
-social-linkedin:
-
-# Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1
-
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
-
-# Build settings
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
-plugins:
+# Site configurations
+gems:
   - jekyll-paginate
-
-paginate: 7
-paginate_path: "/page/:num/"
-
-include:
-  - _pages
-
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
 sass:
-  sass_dir: _sass
   style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
 
-# Exclude from processing.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+version: 1.0.0
+
+# About/contact
+author:
+  name: LEE HYUNJOO
+  description: 초보몽키(LEE HYUNJOO)
+  contact:
+    # linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/wayhome25
+    facebook:  https://www.facebook.com/wayhome25
+    # twitter:   https://twitter.com/Li_Zhihao
+    # weibo:     http://weibo.com/41173780
+    email:    mailto:siwabada@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/blog/'
+  Categories:
+    - '/'
+    # - { Categories All: '/blog/categories/' }
+    - { TIL (Today I Learned): '/blog/categories/#til' }
+    - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
+    - { Django: '/blog/categories/#django' }
+    - { python: '/blog/categories/#python' }
+    - { javascript: '/blog/categories/#javascript' }
+    - { nodejs: '/blog/categories/#nodejs' }
+    - { MySQL: '/blog/categories/#MySQL' }
+    - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
+    - { git: '/blog/categories/#git' }
+    - { firebase: '/blog/categories/#firebase' }
+    - { etc: '/blog/categories/#etc' }
+    # - { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+  Search:
+    - '/search/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
+disqus_short_name: 'wayhome25-github-io' # leave blank if you don't want disqus
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-paginate
