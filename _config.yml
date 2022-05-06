@@ -15,7 +15,7 @@ bootswatch_theme: "united" # cerulean, spacelab, united
 lang: "en_US"
 title: "Lone Wolf Theme"
 description: "A simple bootstrap based jekyll theme."
-url: "https://AI-AMAD.github.io"
+url: https://AI-AMAD.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 author: mani_d2
 twitter:
