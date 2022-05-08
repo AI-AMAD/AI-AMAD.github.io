@@ -4,7 +4,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://AI-AMAD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
--name:    JungChan Lim
+author-name:    JungChan Lim
 author-image:   이력서용 사진.jpeg
 author-job:     Deeplearning engineer
 author-email:   lkdfj2212@gmail.com # Add your email for contant form.
