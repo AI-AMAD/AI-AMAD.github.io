@@ -1,0 +1,27 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+<div class="card post-box">
+    <a href="{{ post.url | absolute_url }}">
+        {% if post.image %} <img class="rounded mb-4 post-image" sizes="(max-width: 401px) 400px, (max-width: 700px) 7000px,
+        1000px" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+    </a>
+    <div class="card-block">
+        <div>
+                {% assign sortedCategories = post.categories | sort %}
+                {% for category in sortedCategories %}
+                 <p class ="post_info"><a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a></p>
+                {% endfor %}
+        </div>
+        <h3 class="card-title post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+        <p class="card-text">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
+        <div class="metafooter">
+            <div class="wrapfooter small d-flex align-items-center">
+                <span class="author-meta">
+                 <span class="post-date post_info">{{ post.date | date:"%Y.%m.%d" }}</span>
+                </span>               
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->

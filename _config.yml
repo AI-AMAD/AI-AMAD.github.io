@@ -1,0 +1,37 @@
+title: "Say Hi"
+email: shmm0320@gmail.com
+timezone: UTC
+baseurl: ""
+url: https://shm-m.github.io
+permalink: "/blog/:title"
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+author: Sehee Moon
+paginate: 4
+paginate_path: "/blog/:num"
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
+locale: en_us
+lang: en_us
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+google-analytics: G-6VQFGYS79F
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
