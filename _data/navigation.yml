@@ -29,7 +29,7 @@ main:
   
   #works card
   - title: "works"
-    icon: "paintbrush"
+    icon: "android-desktop"
     slug: "works"
     sections:
         - portfolio
