@@ -2,7 +2,7 @@
 layout: post
 title:  "By spite about what to do"
 date:   2020-06-15
-category: Design
+category: 개발자 이야기
 image: assets/img/blog/blog1.jpg
 author: Ryan Adlard
 tags: jekyll
