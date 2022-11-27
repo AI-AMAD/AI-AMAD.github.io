@@ -180,10 +180,10 @@ resume:
         active: 0
         h_line: 1
 
-      - year: "2009 - 2010"
-        role: "Senior Developer"
-        company: "Abc Inc."
-        text: "Optimize website performance using latest technology."
+      - year: "2010 - 2022"
+        role: "항공정비사 [TA/FA-50 Crew Chief.]"
+        company: "대한민국 공군"
+        text: "졸업 후 전공을 살려 공군에 입대 후 12년간 라인정비사로 일했습니다. 그리고 현재는 제2의 인생에 도전하고 있습니다."
         active: 0
         h_line: 0
   education:
@@ -199,7 +199,7 @@ resume:
       - year: "2022.12 - 2022.04"
         institution: "Programming Course"
         city: "Wecode"
-        text: "Python & Django / Back-end 과정 수료"
+        text: "Python & Django / Back-end 과정 수료 및 협업 프로젝트 2건"
         h_line: 1
 
       - year: "2004 - 2005"
@@ -233,13 +233,13 @@ skills:
       icon: "flag"
       items:
         - label: "IT 강의 제작"
-          value: "70" #0-100 progress in %
+          value: "80" #0-100 progress in %
 
         - label: "English"
           value: "70" #0-100 progress in %
 
         - label: "Clean code에 대한 고민"
-          value: "70" #0-100 progress in %
+          value: "60" #0-100 progress in %
 
         - label: "자기계발 서적"
           value: "80" #0-100 progress in %
