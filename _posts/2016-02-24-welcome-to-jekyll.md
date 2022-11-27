@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Jekyll!"
 date: 2020-08-08
 category:
-  - 개발자 이야기
+  - Music
 image: assets/img/blog/blog1.jpg
 author: Sarah Rose
 tags: Jekyll

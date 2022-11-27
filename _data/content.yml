@@ -166,17 +166,17 @@ resume:
     title: "Experience"
     icon: "briefcase"
     items:
-      - year: "2013 - Present"
-        role: "Art Director"
-        company: "Facebook Inc."
-        text: "Collaborate with creative and development teams on the execution of ideas."
+      - year: "2022.08 - Present"
+        role: "Full-stack developer"
+        company: "판교 어딘가"
+        text: "bootcamp 수료 후 현재 풀스택 주니어 개발자로 일하고 있습니다."
         active: 1
         h_line: 1
 
-      - year: "2011 - 2012"
-        role: "Front-end Developer"
-        company: "Google Inc."
-        text: "Monitored technical aspects of the front-end delivery for several projects."
+      - year: "2022.05 - 2022.07"
+        role: "Back-end Developer"
+        company: "onionfive"
+        text: "오큐파이 프로젝트(인턴)"
         active: 0
         h_line: 1
 
@@ -190,16 +190,16 @@ resume:
     title: "Education"
     icon: "university"
     items:
-      - year: "2006 - 2008"
-        institution: "Art University"
-        city: "New York"
-        text: "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri"
+      - year: "2008 - 2010"
+        institution: "아세아 항공 전문 학교"
+        city: "서울 남영"
+        text: "항공정비사 자격 취득 및 항공 정비 전문학사 과정 수료"
         h_line: 1
 
-      - year: "2005 - 2006"
+      - year: "2022.12 - 2022.04"
         institution: "Programming Course"
-        city: "Paris"
-        text: "Coursework - Git, WordPress, Javascript, iOS, Android."
+        city: "Wecode"
+        text: "Python & Django / Back-end 과정 수료"
         h_line: 1
 
       - year: "2004 - 2005"
@@ -229,64 +229,64 @@ skills:
           value: "85" #0-100 progress in %
 
     - type: "dotted" #skills progress type - default, dotted, circles, list
-      title: "Languages"
+      title: "관심 분야"
       icon: "flag"
       items:
-        - label: "English"
-          value: "90" #0-100 progress in %
-
-        - label: "German"
-          value: "60" #0-100 progress in %
-
-        - label: "Italian"
-          value: "30" #0-100 progress in %
-
-        - label: "French"
+        - label: "IT 강의 제작"
           value: "70" #0-100 progress in %
+
+        - label: "English"
+          value: "70" #0-100 progress in %
+
+        - label: "Clean code에 대한 고민"
+          value: "70" #0-100 progress in %
+
+        - label: "자기계발 서적"
+          value: "80" #0-100 progress in %
 
     - type: "circles" #skills progress type - default, dotted, circles, list
       title: "Coding"
       icon: "code"
       items:
-        - label: "WordPress"
-          value: "90" #0-100 progress in %
+        - label: "Java & Spring boot"
+          value: "70" #0-100 progress in %
 
-        - label: "PHP / MYSQL"
+        - label: "Python & Django"
           value: "75" #0-100 progress in %
 
-        - label: "Angular / JavaScript"
-          value: "85" #0-100 progress in %
+        - label: "Javascript & Vue"
+          value: "65" #0-100 progress in %
 
-        - label: "HTML / CSS"
-          value: "95" #0-100 progress in %
+        - label: "RDB / Postgres & Mysql"
+          value: "70" #0-100 progress in %
 
     - type: "list" #skills progress type - default, dotted, circles, list
-      title: "Knowledge"
+      title: "Knowledge" # 내가 할 수 있는 것 여기에 적기
       icon: "android-list"
       items:
         - label: "Website hosting"
           value: "" #0-100 progress in %
 
-        - label: "iOS and android apps"
+        - label: "객체지향 프로그래밍"
           value: "" #0-100 progress in %
 
-        - label: "Create logo design"
+        - label: "알고리즘 초급"
           value: "" #0-100 progress in %
 
-        - label: "Design for print"
+        - label: "각종 Dev tools"
           value: "" #0-100 progress in %
 
-        - label: "Modern and mobile-ready"
+        - label: "AWS & Docker"
           value: "" #0-100 progress in %
 
-        - label: "Advertising services include"
-          value: "" #0-100 progress in %
+       # - label: ""
+       #   value: "" #0-100 progress in %
 
-        - label: "Graphics and animations"
-          value: "" #0-100 progress in %
+       # - label: "Graphics and animations"
+       #   value: "" #0-100 progress in %
 
-        - label: "Search engine marketing"
-          value: "" #0-100 progress in %
+       # - label: "Search engine marketing"
+       #   value: "" #0-100 progress in %
 
 ### Portfolio [ portfolio ]
 portfolio:
