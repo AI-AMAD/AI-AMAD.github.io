@@ -196,7 +196,7 @@ resume:
         text: "항공정비사 자격 취득 및 항공 정비 전문학사 과정 수료"
         h_line: 1
 
-      - year: "2022.12 - 2022.04"
+      - year: "2021.12 - 2022.04"
         institution: "Programming Course"
         city: "Wecode"
         text: "Python & Django / Back-end 과정 수료 및 협업 프로젝트 2건"
